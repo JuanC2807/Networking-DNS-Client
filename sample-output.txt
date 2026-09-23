@@ -1,0 +1,176 @@
+python3 my-dns-client.py gmu.edu
+Preparing DNS query...
+Contacting DNS server...
+Sending DNS query..
+DNS response received (attempt 1 of 3)
+Processing DNS response...
+----------------------------------------------------------------------------
+header.ID = 61958
+header.FLAGS = 33152
+header.QDCOUNT = 1
+header.ANCOUNT = 1
+header.NSCOUNT = 0
+header.ARCOUNT = 0
+header.QR = 1
+header.OPCODE = 0
+header.AA = 0
+header.TC = 0
+header.RD = 1
+header.RA = 1
+header.Z = 0
+header.RCODE = 0
+question.QNAME = gmu.edu
+question.QTYPE = 1
+question.QCLASS = 1
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 2687
+answer.RDLENGTH = 4
+answer.RDATA = 129.174.134.28
+
+
+--------------End of Answer 1----------------
+
+python3 my-dns-client.py google.com
+Preparing DNS query...
+Contacting DNS server...
+Sending DNS query..
+DNS response received (attempt 1 of 3)
+Processing DNS response...
+----------------------------------------------------------------------------
+header.ID = 39830
+header.FLAGS = 33152
+header.QDCOUNT = 1
+header.ANCOUNT = 6
+header.NSCOUNT = 0
+header.ARCOUNT = 0
+header.QR = 1
+header.OPCODE = 0
+header.AA = 0
+header.TC = 0
+header.RD = 1
+header.RA = 1
+header.Z = 0
+header.RCODE = 0
+question.QNAME = google.com
+question.QTYPE = 1
+question.QCLASS = 1
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 300
+answer.RDLENGTH = 4
+answer.RDATA = 142.251.111.138
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 300
+answer.RDLENGTH = 4
+answer.RDATA = 142.251.111.102
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 300
+answer.RDLENGTH = 4
+answer.RDATA = 142.251.111.100
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 300
+answer.RDLENGTH = 4
+answer.RDATA = 142.251.111.101
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 300
+answer.RDLENGTH = 4
+answer.RDATA = 142.251.111.113
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 300
+answer.RDLENGTH = 4
+answer.RDATA = 142.251.111.139
+
+--------------End of Answer 2----------------
+
+python3 my-dns-client.py youtube.com
+Preparing DNS query...
+Contacting DNS server...
+Sending DNS query..
+DNS response received (attempt 1 of 3)
+Processing DNS response...
+----------------------------------------------------------------------------
+header.ID = 2013
+header.FLAGS = 33152
+header.QDCOUNT = 1
+header.ANCOUNT = 4
+header.NSCOUNT = 0
+header.ARCOUNT = 0
+header.QR = 1
+header.OPCODE = 0
+header.AA = 0
+header.TC = 0
+header.RD = 1
+header.RA = 1
+header.Z = 0
+header.RCODE = 0
+question.QNAME = youtube.com
+question.QTYPE = 1
+question.QCLASS = 1
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 300
+answer.RDLENGTH = 4
+answer.RDATA = 192.178.155.190
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 300
+answer.RDLENGTH = 4
+answer.RDATA = 192.178.155.136
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 300
+answer.RDLENGTH = 4
+answer.RDATA = 192.178.155.93
+
+answer.NAME = c00c
+answer.TYPE = 1
+answer.CLASS = 1
+answer.TTL = 300
+answer.RDLENGTH = 4
+answer.RDATA = 192.178.155.91
+
+--------------End of Answer 3----------------
+
+--------------Start of Extra Answer when wifi is not connected----------------
+
+python3 my-dns-client.py youtube.com
+Preparing DNS query...
+Contacting DNS server...
+Sending DNS query..
+DNS response received (attempt 1 of 3)
+Timed out waiting for DNS response.
+Sending DNS query..
+DNS response received (attempt 2 of 3)
+Timed out waiting for DNS response.
+Sending DNS query..
+DNS response received (attempt 3 of 3)
+Timed out waiting for DNS response.
+Error: No DNS response after 3 attempts.
+
+--------------End of EXTRA Answer----------------
